@@ -7,15 +7,19 @@
 </head>
 <body>
 	<div>
-		<input type="text" id="n1"/><br/><br/>
-        <input type="text" id="n2"/><br/><br/>
-        
-        <select id="operators">
-            <option value="+">+</option>
-            <option value="-">-</option>
-            <option value="/">/</option>
-            <option value="X">X</option>
-        </select>
+		<select name="condominios" id="condominios">
+			<option id="cond1" value="cond1">condominio 1</option>
+			<option id="cond2" value="cond2">condominio 2</option>
+			<option id="cond3" value="cond3">condominio 3</option>
+			<option id="cond4" value="cond4">condominio 4</option>
+		</select>
+
+		<select name="prima" id="primas">
+			<option id="prima1" value="prima1">prima1</option>
+			<option id="prima2" value="prima2">prima2</option>
+			<option id="prima3" value="prima3">prima3</option>
+			<option id="prima4" value="prima4">prima4</option>
+		</select>
         
         <button onclick="calc();">=</button>
         <input type="text" id="result"/>
