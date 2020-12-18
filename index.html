@@ -4,33 +4,62 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Calculadora Hipotecaria</title>
+	<style>
+		#result, #cuota, #resultadoPrima {
+			text-align: right;
+		}
+	</style>
 </head>
 <body>
 	<div>
-		<select name="condominios" id="condominios">
-			<option id="cond1" value="cond1">condominio 1</option>
-			<option id="cond2" value="cond2">condominio 2</option>
-			<option id="cond3" value="cond3">condominio 3</option>
-			<option id="cond4" value="cond4">condominio 4</option>
-		</select>
+		<h1>Calculadora de Condominios</h1>
+	</div>
+	<div>
+		<div>
+			<label for="">Precio de Condominio</label>
+			<select name="condominios" id="condominios">
+				<option id="cond1" value="cond1">$ 87,900.00</option>
+				<option id="cond2" value="cond2">$ 96,000.00</option>
+				<option id="cond3" value="cond3">$ 97,000.00</option>
+				<option id="cond4" value="cond4">$ 99,500.00</option>
+			</select>
+		</div>
+		<div>
+			<label for="">Interes de Prima o Adelanto</label>
+			<select name="prima" id="primas">
+				<option id="prima1" value="prima1">10%</option>
+				<option id="prima2" value="prima2">15%</option>
+				<option id="prima3" value="prima3">20%</option>
+				<option id="prima4" value="prima4">25%</option>
+			</select>
+		</div>
+		<div style="display: none;">
+			<label for="">Tasa</label>
+			<select name="tasa" id="tasas">
+				<option id="tasa1" value="tasa1">10.5%</option>
+				<option id="tasa2" value="tasa2">11%</option>
+				<option id="tasa3" value="tasa3">11.5%</option>
+				<option id="tasa4" value="tasa4">12%</option>
+			</select>
+		</div>
 
-		<select name="prima" id="primas">
-			<option id="prima1" value="prima1">prima1</option>
-			<option id="prima2" value="prima2">prima2</option>
-			<option id="prima3" value="prima3">prima3</option>
-			<option id="prima4" value="prima4">prima4</option>
-		</select>
+		<div>
+			<label for="">Prima</label>
+			<input type="text" id="resultadoPrima" disabled/>
+		</div>
 
-		<select name="tasa" id="tasas">
-			<option id="tasa1" value="tasa1">tasa1</option>
-			<option id="tasa2" value="tasa2">tasa2</option>
-			<option id="tasa3" value="tasa3">tasa3</option>
-			<option id="tasa4" value="tasa4">tasa4</option>
-		</select>
-        
-        <button onclick="calc();">=</button>
-		<input type="text" id="result"/>
-		<input type="text" id="cuota"/>
+		<div>
+			<label for="">Monto a Financiar</label>
+			<input type="text" id="result" disabled/>
+		</div>
+		
+		<div>
+			<label for="">Cuota Aproximada</label>
+			<input type="text" id="cuota" disabled/>
+		</div>
+		<div>
+			<button onclick="calc();">Calcular</button>
+		</div>
 	</div>
 	<script src="js/js.js"></script>
 </body>
