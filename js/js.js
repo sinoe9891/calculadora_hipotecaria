@@ -5,6 +5,8 @@ function calc() {
 	var precio2 = 96000.00;
 	var precio3 = 97000.00;
 	var precio4 = 99500.0
+	
+	//Prima
 	var prima1 = 0.10;
 	var prima2 = 0.15;
 	var prima3 = 0.20;
